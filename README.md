@@ -1,8 +1,8 @@
-# 🚚 Real-Time Monitoring Gudang dengan Kafka dan PySpark
+## Real-Time Monitoring Gudang dengan Kafka dan PySpark
 
 Proyek ini mensimulasikan sistem monitoring real-time suhu dan kelembaban di gudang menggunakan **Apache Kafka**, **Docker**, dan **PySpark Streaming**.
 
-## 🧱 Arsitektur
+## Arsitektur
 
 - **Kafka + Zookeeper**: Menyediakan saluran komunikasi real-time
 - **Kafka Producer**: Mengirim data sensor suhu dan kelembaban setiap detik
@@ -10,7 +10,7 @@ Proyek ini mensimulasikan sistem monitoring real-time suhu dan kelembaban di gud
 
 ---
 
-## 🧰 Prasyarat
+## Prasyarat
 
 - Docker & Docker Compose
 - Python 3.8+
@@ -20,7 +20,7 @@ Proyek ini mensimulasikan sistem monitoring real-time suhu dan kelembaban di gud
 
 ---
 
-## 🔧 Langkah-Langkah
+##  Langkah-Langkah
 
 ### 1. Jalankan Kafka dan Zookeeper (Docker)
 
@@ -33,4 +33,10 @@ docker run -d --name kafka1 -p 9092:9092 -p 29092:29092 \
   -e KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR=1 \
   --link zoo1 \
   confluentinc/cp-kafka:7.8.0
+```
+
+jika belum ada docker image untuk kafka dan zookeeper bisa install dengan 
+
+```bash
+
 ```
